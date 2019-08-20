@@ -46,7 +46,8 @@ public class Main {
 				shapeList.add(new Square(color, side));
 				System.out.println("Input for Square Saved\n");
 				break;
-			case 3: break;
+			case 3:
+				break;
 			default:
 				System.out.println("\nInvalid Choice -  Please Retry !!\n");
 
@@ -70,9 +71,9 @@ public class Main {
 	public static void printShapes(ArrayList<Shape> shapeList) {
 
 		System.out.println("\nArea Calculator - Output");
-		for(int index=0; index < shapeList.size(); index++) {
+		for (int index = 0; index < shapeList.size(); index++) {
 
-			System.out.println("\nShape #" + (index+1));
+			System.out.println("\nShape #" + (index + 1));
 			shapeList.get(index).printInfo();
 
 		}
