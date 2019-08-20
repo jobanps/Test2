@@ -10,6 +10,7 @@ public class Square extends Shape implements TwoDimensionalShapeInterface {
 		this.setShapeArea(calculateArea());
 	}
 
+	// Function to calculate Area of a Square
 	@Override
 	public double calculateArea() {
 
@@ -17,6 +18,7 @@ public class Square extends Shape implements TwoDimensionalShapeInterface {
 		return squareArea;
 	}
 
+	// PrintInfo will print color, dimensions, area of a Square
 	@Override
 	public void printInfo() {
 

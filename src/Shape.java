@@ -11,6 +11,7 @@ public class Shape {
 		this.color = color;
 	}
 
+	// Defining Empty Function for Use OverRiding for subclasses
 	public void printInfo() {
 
 	}

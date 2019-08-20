@@ -11,6 +11,7 @@ public class Main {
 		String color = "";
 		double base, height, side;
 
+		// Create ArrayList of Shape Objects
 		ArrayList<Shape> shapeList = new ArrayList<Shape>();
 
 		while (choice != 3) {
@@ -46,15 +47,16 @@ public class Main {
 				shapeList.add(new Square(color, side));
 				System.out.println("Input for Square Saved\n");
 				break;
-			case 3:
+			case 3: // Exit Case
 				break;
-			default:
+			default: // User Entered Invalid Input
 				System.out.println("\nInvalid Choice -  Please Retry !!\n");
 
 			}
 
 		}
 
+		// Print Details of Each Shape added in the List
 		printShapes(shapeList);
 
 		keyboard.close();
@@ -74,6 +76,7 @@ public class Main {
 		for (int index = 0; index < shapeList.size(); index++) {
 
 			System.out.println("\nShape #" + (index + 1));
+			// Calling printInfo for each shape
 			shapeList.get(index).printInfo();
 
 		}

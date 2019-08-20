@@ -11,6 +11,7 @@ public class Triangle extends Shape implements TwoDimensionalShapeInterface {
 		this.setShapeArea(calculateArea());
 	}
 
+	// Function to calculate Area of a Square
 	@Override
 	public double calculateArea() {
 
@@ -18,6 +19,7 @@ public class Triangle extends Shape implements TwoDimensionalShapeInterface {
 		return triangleArea;
 	}
 
+	// PrintInfo will print color, dimensions, area of a Triangle
 	@Override
 	public void printInfo() {
 		String detailStr = "Shape Type : Triangle \n" + "**********************" + "\nColor : " + this.getColor()
